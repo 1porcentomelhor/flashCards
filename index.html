@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FLASH CARDS</title>
+</head>
+<body>
+    <header>
+        <h1><i>Flash Cards</i></h1>
+        <nav>
+            <button id="adicionar">INSIRA SEU LEMBRETE</button>
+            <button id="btn-historico">HISTÓRICO</button>
+            
+        </nav>
+    </header>
+    
+    <main class="flashcard">
+        <h2>GIRE O FLASH CARD E MEMORIZE 2X  MAIS O CONTEÚDO</h2>
+        <div class="box-card">
+            <div class="card" id="card">
+                <div class="ncard" id="ncard">
+                    <p id="cardAtualTexto"></p> <!-- código usado para dar espaço no texto do parágrafo-->
+                    <p id="cardTotal"></p>
+                </div>
+                <h3 id="contText">texto do card</h3>
+                <!--Botões de controle dos cards-->
+                <button id="hard" class="btnCard">DIFÍCIL <span id="countHard">0</span></button>
+                <button id="good" class="btnCard">BOM <span id="countGood">0</span></button>
+                <button id="easy" class="btnCard">FÁCIL <span id="countEasy">0</span></button>
+                <button id="previous" class="btnCard"><< ANTERIOR</button>
+                <button id="next" class="btnCard">PRÓXIMO >></button>
+                <button id="del" class="btnCard">DELETE 🗑️</button>
+            </div>
+        </div>
+
+        <div class="poupup" id="poupup"></div>
+
+
+    </main>
+    <footer>
+        <h4> Desenvolvido por Natália Castro</h4>
+        <h5>1% MELHOR</h5>
+    </footer>
+
+
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

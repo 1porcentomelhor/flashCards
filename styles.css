@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(153, 169, 169);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== HEADER ===== */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+h1{
+    color:darkmagenta;
+}
+
+nav{
+    display: flex;
+    gap: 10px;
+}
+
+button{
+    cursor: pointer;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+}
+
+button:hover{
+    background-color:rgb(54, 29, 76);
+    color:white;
+}
+
+/* ===== FLASHCARD AREA ===== */
+
+.flashcard{
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+/* ===== CARD CONTAINER ===== */
+
+.box-card{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* ===== CARD ===== */
+
+.card{
+    width: 100%;
+    max-width: 650px;
+    min-height: 280px;
+
+    background-color: rgb(131, 108, 152);
+    color:white;
+
+    border-radius: 25px;
+    padding: 20px;
+
+    transition: transform .5s;
+}
+
+.ncard{
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    margin: 50px 0;
+}
+
+/* ===== BUTTONS INSIDE CARD ===== */
+
+.btnCard{
+    border-radius: 10px;
+    background-color: rgb(75, 73, 78);
+    color:white;
+    margin: 5px;
+}
+
+.btnCard:hover{
+   background-color: rgb(54, 29, 76);
+}
+
+/* ===== OVERLAY ===== */
+
+#overlay{
+  z-index: 10;
+}
+footer{
+    text-align: center;
+    color:aliceblue;
+    margin-top: 250px;
+    margin-bottom: 100px;
+}
+
+/* ===============================
+   📱 RESPONSIVIDADE
+==================================*/
+
+@media (max-width:900px){
+
+    header{
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:700px){
+
+    .card{
+        max-width: 95%;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    .btnCard{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width:450px){
+
+    h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+
+    button{
+        padding: 6px 8px;
+    }
+}
